@@ -1,15 +1,17 @@
 {{define "footer"}}
 <footer class="footer">
   <div class="footer-container">
+    <!-- Zona de Enlaces Rápidos -->
     <div class="footer-links">
-      <h4>Condiciones Generales</h4>
-      <p>A los precios se añadirá el coste regulado asociado al mecanismo de financiación del bono social:</p>
+      <h4>Enlaces Rápidos</h4>
       <ul>
         <li><a href="#">Condiciones Generales</a></li>
-        <li><a href="#">Condiciones de Contratación Plan Más Ahorro</a></li>
-        <li><a href="#">Condiciones Generales Energy Xmas</a></li>
+        <li><a href="#">Contratación Plan Más Ahorro</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
       </ul>
     </div>
+
+    <!-- Zona de Pasarelas de Pago -->
     <div class="footer-payment">
       <h4>Pasarelas de Pago</h4>
       <div class="payment-icons">
@@ -19,15 +21,22 @@
         <img src="/static/images/amex.png" alt="American Express">
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Tu Empresa de Energía. Todos los derechos reservados.</p>
-      <ul class="footer-nav">
-        <li><a href="#">Mapa web</a></li>
-        <li><a href="#">Información legal</a></li>
-        <li><a href="#">Política de privacidad</a></li>
-        <li><a href="#">Accesibilidad</a></li>
-      </ul>
+
+    <!-- Zona del Mapa -->
+    <div class="footer-map">
+      <h4>Ubicación</h4>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509305!2d-122.41941548468136!3d37.7749292797599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d5f3f5b1%3A0xc80b8f06e177fe62!2sSan+Francisco!5e0!3m2!1sen!2sus!4v1608326761000!5m2!1sen!2sus" 
+        width="100%" 
+        height="150" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Tu Empresa de Energía. Todos los derechos reservados.</p>
   </div>
 </footer>
 {{end}}
