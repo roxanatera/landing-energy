@@ -6,6 +6,9 @@ Este es mi **primer proyecto utilizando Golang**, y ha sido una experiencia emoc
 
 ---
 
+![Imagen del Proyecto](https://github.com/roxanatera/landing-energy/blob/main/static/images/banner.png)
+
+
 ## 🚀 Características
 
 - **Diseño Responsivo**: Adaptable a cualquier dispositivo.
