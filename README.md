@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 # landing-energy
  Landing Page desarrollado con Golang, SCSS, y el framework Fiber.
 
  # Landing Page de Ofertas de Energía
+=======
+# Landing Page de Ofertas de Energía
+
 
 Este es un proyecto de **Landing Page** desarrollado con Golang, SCSS, y el framework **Fiber**. La página está diseñada para ser minimalista, profesional y completamente responsiva, alineándose con las mejores prácticas de desarrollo web.
 
@@ -42,5 +46,12 @@ Este es mi **primer proyecto utilizando Golang**, y ha sido una experiencia emoc
 1. Clonar este repositorio:
    ```bash
    git clone https://github.com/tu-usuario/landing-energia.git
+<<<<<<< HEAD
    cd landing-energia
+=======
+   cd landing-energy
+
+
+---
+>>>>>>> 7280b82 (Initial commit: Landing Page de Ofertas de Energía)
 

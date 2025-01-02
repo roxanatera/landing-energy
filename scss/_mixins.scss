@@ -1,0 +1,47 @@
+@mixin flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin responsive($breakpoint) {
+    @if $breakpoint == "mobile" {
+      @media (max-width: 768px) {
+        @content;
+      }
+    } @else if $breakpoint == "tablet" {
+      @media (max-width: 1024px) {
+        @content;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .navbar-contact {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      .banner-item {
+        font-size: 1rem;
+      }
+    }
+  }
+  
