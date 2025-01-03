@@ -6,30 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/static/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
   <script src="/static/js/scripts.js" defer></script>
-
-  
   <title>Ofertas de Energía</title>
 </head>
 <body>
+  <!-- Navbar -->
   {{template "navbar"}}
 
+  <!-- Hero Section -->
   {{template "hero"}}
 
+  <!-- Promo Section -->
+  <section id="promo">
+    {{template "promo"}}
+  </section>
 
-  {{template "promo"}}
-  {{template "banner"}}
+  <!-- Banner Section -->
+  <section id="banner">
+    {{template "banner"}}
+  </section>
 
   <!-- Steps Section -->
-  {{template "steps"}}
-  <!-- Features Section -->
-  {{template "cards"}}
-  <!-- Banner Section -->
-  {{template "banner"}}
+  <section id="steps">
+    {{template "steps"}}
+  </section>
+
+  <!-- Features Section (Cards) -->
+  <section id="cards">
+    {{template "cards"}}
+  </section>
 
   <!-- Footer -->
-  {{template "footer"}}
+  <footer id="footer">
+    {{template "footer"}}
+  </footer>
 </body>
 </html>
 {{end}}
