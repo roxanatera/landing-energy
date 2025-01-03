@@ -1,0 +1,53 @@
+@use 'variables';
+@use 'mixins';
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .navbar-container {
+      @include mixins.flex-center(row);
+      justify-content: space-between;
+      gap: 1rem;
+  
+      @include mixins.responsive("mobile") {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
+    .navbar-logo {
+      max-width: 120px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+      @include mixins.responsive("mobile") {
+        margin-bottom: 1rem;
+      }
+    }
+  
+    .navbar-links {
+      display: flex;
+      gap: 2rem;
+  
+      a {
+        text-decoration: none;
+        color: #00796b;
+        font-weight: bold;
+        font-size: 1rem;
+  
+        &:hover {
+          color: #004d40;
+        }
+      }
+  
+      @include mixins.responsive("mobile") {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  }
+  

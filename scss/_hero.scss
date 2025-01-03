@@ -1,0 +1,54 @@
+@use 'variables';
+@use 'mixins';
+.hero {
+    background: linear-gradient(135deg, #00796b 40%, #004d40);
+    color: #ffffff;
+    padding: 4rem 1rem;
+    text-align: center;
+  
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+  
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+  
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  
+    .btn-primary {
+      background-color: #ffffff;
+      color: #00796b;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+  
+      &:hover {
+        background-color: #004d40;
+        color: #ffffff;
+      }
+    }
+  }
+  

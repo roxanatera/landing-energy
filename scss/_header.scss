@@ -1,0 +1,36 @@
+
+@use 'variables';
+@use 'mixins';
+
+header {
+  background-color: variables.$primary-color; // Correcto
+}
+
+header {
+    background-color: variables.$primary-color;
+    color: variables.$background-color;
+  
+    .container {
+      @include mixins.flex-center(space-between);
+      padding: 1rem 2rem;
+  
+      .menu {
+        display: flex;
+        gap: 1rem;
+  
+        a {
+          color: variables.$background-color;
+          text-decoration: none;
+        }
+  
+        .btn-primary {
+          background-color: variables.$secondary-color;
+          border: none;
+          padding: 0.5rem 1rem;
+          color: variables.$primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
